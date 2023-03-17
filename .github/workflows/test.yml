@@ -1,0 +1,11 @@
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    name: ansdoc
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: ansdoc
+        uses: ./

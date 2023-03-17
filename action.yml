@@ -1,6 +1,7 @@
-# action.yml
 name: 'ansdoc'
 description: 'Generate Markdown Table docs for your Ansible Role'
+author: tommorelly@gmail.com
+
 inputs:
   vars-file:
     required: true
@@ -11,13 +12,10 @@ inputs:
     description: "file where to write the generated markdown table"
     default: "README.md"
 
-outputs:
-  markdown: 
-    description: 'the generated markdown snippet'
-
 runs:
   using: 'docker'
-  image: 'Dockerfile'
-  args:
-    - ${{ inputs.vars-file }}
-    - ${{ inputs.output-file }}
+  image: "docker://ghcr.io/falcosuessgott/ansdoc:v0.0.3"
+  env:
+    ANSDOC_FILE: ${{ inputs.vars-file }}
+    ANSDOC_INSERT: "true"
+    ANSDOC_OUTPUT_FILE: ${{ inputs.output-file }}

@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.0](https://github.com/FalcoSuessgott/ansdoc-action/compare/v1.1.0...v1.2.0) (2023-03-25)
+
+
+### Features
+
+* **bump:** bump image version ([#3](https://github.com/FalcoSuessgott/ansdoc-action/issues/3)) ([a089299](https://github.com/FalcoSuessgott/ansdoc-action/commit/a0892996586b62677bb7814185de83a8237f1d52))
+
 ## [1.1.0](https://github.com/FalcoSuessgott/ansdoc-action/compare/v1.0.0...v1.1.0) (2023-03-25)
 
 
